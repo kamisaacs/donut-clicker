@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donut Clicker</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="navigation-bar">
+        <div class="navbar">
+            <!-- <a href="#home">Home</a> -->
+            <!-- <a href="#news">News</a> -->
+            <div class="dropdown">
+                <button class="dropbtn">Information 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+              <div class="dropdown-content">
+                <a href="#" class="ppopup btn"  onclick="openPopup()">Developer</a>
+                <a href="#" class="ppopup btn" onclick="openPopup()">Company</a>
+                <a href="#" class="ppopup btn" onclick="openPopup()">Inspiration</a>
+              </div>
+            </div> 
+          </div>
+    </div>
+
+
+    <div class="kontainer">
+
+        <div class="popup" id="popup">
+            <img src="Selfless.jpeg" alt="">
+            <h2>Developer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum nobis sed doloribus omnis fugit voluptatibus ad similique facere nam obcaecati!</p>
+            <button type="button" class="btn" onclick="closePopup()">Close</button>
+            <div class="popup">
+    
+            </div>
+        </div>
+
+        <div class="popup" id="popup">
+            <img src="Flasher.png" alt="">
+            <h2> Company</h2>
+            <p>Fred the Baker Baking Company. making donuts since...</p>
+            <button type="button" class="btn" onclick="closePopup()">Close</button>
+            <div class="ppopup">
+    
+            </div>
+        </div>
+
+        <div class="popup" id="popup">
+            <img src="Tigre.jpg" alt="">
+            <h2>Developer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum nobis sed doloribus omnis fugit voluptatibus ad similique facere nam obcaecati!</p>
+            <button type="button" class="btn" onclick="closePopup()">Close</button>
+            <div class="popup">
+    
+            </div>
+        </div>
+
+      </div>
+
+
+
+
+
+<!-- DONUT IMAGE//////////// -->
+    <div class="donut-image" >
+        <img id="rotated" class="rotate-obj" src="choco.png">
+    </div>
+<!-- DONUT IMAGE//////////// -->
+
+
+<!-- /////Donut Clicker/// -->
+
+
+
+
+<div class="button-container flexs">
+
+
+
+        <div class="rotateBtn container flex">
+                <h1>Donut Counter</h1>
+                    <h2 id="count-id">0</h2>
+                <h2>Donuts made.</h2>
+
+            <div class="flex">
+                <button class="add-button" class="rotateBtn" id="add-button" onclick="addDonut()"> Add Donut </button>
+            </div>
+        </div>
+
+
+        <div class="flex auto-clicker"> 
+            <div class="buy-auto-clicker">
+                <button id="autoClickerBuy" onclick="buyAutoClick()" disabled>Buy Auto Clicker</button>
+            </div>
+
+            <div class="acp">
+                <p>Auto Clickers Purchased:</p>
+                <p id="numOfAc">0</p>
+            </div> 
+            <button id="startAutoClick" onclick="setInterval(startAutoClicking, autoClickSpeed()); disabled" disabled>Start Auto Click</button>
+        </div>
+
+
+        <div  class="Reset">
+            <button onclick="location.reload()" id="reset">Reset</button>
+        </div>
+
+
+    
+</div>
+<span></span>
+
+
+<div class="information grid-columns items">
+    <div id="Developer" class="Developer item-1 card"><span>Developer:</span>
+        <img src="Selfless.jpeg">
+        <p> Hello! My name is Kami and Fred hired me to design for him a new donut making. Enjoy the donut making process. You can reach out to me.</p>
+    </div>
+    <div id="Company" class="Company item-2 card"> <span>Company:</span>
+        <img src="Flasher.PNG">
+        <p>Fred the Baker Baking Company. making donuts since... It's a new day and we have to adapt to emerging technology! We have hired developer extraordinaire Kami to update our baking process. Enjoy the game while you can.</p>
+    </div>
+    <div id="Inspiration" class="Inspiration item-3 card"><span>Inspiration:</span>
+        <img src="Tigre.jpg">
+        <p>This game is inspired by A tribute to Cookie Clicker.
+</div>
+
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
